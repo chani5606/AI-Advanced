@@ -1,0 +1,178 @@
+{
+  "kind": "api",
+  "turns": [
+    {
+      "session_id": "s1",
+      "turn_id": "t1",
+      "user": "היי, תשמרי שאני מעדיפה ללמוד בבוקר ותעני קצר.",
+      "assistant": "שמור, מעדיף ללמוד בבוקר. איך אפשר לעזור לך היום?",
+      "tools_used": [
+        "save_preference"
+      ],
+      "model_calls": 2,
+      "usage": {
+        "input": 664,
+        "output": 44,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.01326,
+      "latency_ms": 3530
+    },
+    {
+      "session_id": "s1",
+      "turn_id": "t2",
+      "user": "תוסיפי לי משימה באלגוריתמים על גרפים לדדליין 2026-11-01 בעדיפות 1",
+      "assistant": "המשימה נוספה: אלגוריתמים על גרפים, דדליין 2026-11-01, עדיפות 1. יש עוד משהו שתרצי?",
+      "tools_used": [
+        "add_task"
+      ],
+      "model_calls": 2,
+      "usage": {
+        "input": 940,
+        "output": 78,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.01995,
+      "latency_ms": 2119
+    },
+    {
+      "session_id": "s1",
+      "turn_id": "t3",
+      "user": "תביאי לי טיפים חיצוניים לקורס algorithms",
+      "assistant": "הנה טיפים לקורס אלגוריתמים:\n1. תתרגלי 2 בעיות גרפים ביום.\n2. חזרי על המעברים של תכנות דינמי.\n\nאם צריך עזרה נוספת, אני כאן!",
+      "tools_used": [
+        "get_course_hints_external"
+      ],
+      "model_calls": 2,
+      "usage": {
+        "input": 1188,
+        "output": 69,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.022995,
+      "latency_ms": 3202
+    },
+    {
+      "session_id": "s1",
+      "turn_id": "t4",
+      "user": "תראי לי את המשימות כרגע",
+      "assistant": "להלן המשימות הנוכחיות שלך:\n\n- קורס: אלגוריתמים\n  - נושא: גרפים\n  - דדליין: 2026-11-01\n  - עדיפות: 1\n\nאם יש משהו נוסף שתרצי לעשות, תני לי לדעת!",
+      "tools_used": [
+        "list_tasks"
+      ],
+      "model_calls": 2,
+      "usage": {
+        "input": 1566,
+        "output": 79,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.029415,
+      "latency_ms": 3284
+    },
+    {
+      "session_id": "s2",
+      "turn_id": "t1",
+      "user": "מה את זוכרת על ההעדפות שלי?",
+      "assistant": "אין לי מידע על ההעדפות שלך בשלב זה. האם תרצה להגדיר העדפות חדשות?",
+      "tools_used": [],
+      "model_calls": 1,
+      "usage": {
+        "input": 283,
+        "output": 25,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.00612,
+      "latency_ms": 1084
+    },
+    {
+      "session_id": "s2",
+      "turn_id": "t2",
+      "user": "מעכשיו תעני באריכות, למרות שביקשתי קצר",
+      "assistant": "נראה שישנו ניגוד בין הבקשה שלך להיענות באריכות לבין ההעדפה הקודמת שלך לקבלת תשובות קצרות וברורות. האם אתה מאשר לשנות את ההעדפה שלך כדי שאוכל לענות באריכות?",
+      "tools_used": [],
+      "model_calls": 1,
+      "usage": {
+        "input": 332,
+        "output": 54,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.00903,
+      "latency_ms": 1908
+    },
+    {
+      "session_id": "s2",
+      "turn_id": "t3",
+      "user": "תוסיפי גם משימה ב-databases על indexing לדדליין 2026-11-05 בעדיפות 2",
+      "assistant": "הוספתי משימה חדשה בקורס databases על indexing עם הדדליין 2026-11-05 ובעדיפות 2. אם יש לך עוד משימות או בקשות, אני כאן לעזור!",
+      "tools_used": [
+        "add_task"
+      ],
+      "model_calls": 2,
+      "usage": {
+        "input": 962,
+        "output": 83,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.020655,
+      "latency_ms": 2201
+    }
+  ],
+  "checks": [
+    {
+      "id": "c1",
+      "passed": false,
+      "reason": "condition failed"
+    },
+    {
+      "id": "c2",
+      "passed": true,
+      "reason": "ok"
+    },
+    {
+      "id": "c3",
+      "passed": false,
+      "reason": "condition failed"
+    },
+    {
+      "id": "c4",
+      "passed": false,
+      "reason": "condition failed"
+    },
+    {
+      "id": "c5",
+      "passed": true,
+      "reason": "ok"
+    },
+    {
+      "id": "c6",
+      "passed": false,
+      "reason": "condition failed"
+    }
+  ],
+  "totals": {
+    "input": 5935,
+    "output": 432,
+    "cache_read": 0,
+    "cache_write": 0,
+    "cost_usd": 0.121425,
+    "model_calls": 12,
+    "latency_ms": 17328
+  },
+  "harness_loc": {
+    "loop.py": 179,
+    "tools.py": 98,
+    "history.py": 31,
+    "memory.py": 25,
+    "context.py": 25,
+    "compaction.py": 23,
+    "caching.py": 27,
+    "tokens.py": 40
+  }
+}

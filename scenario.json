@@ -1,0 +1,93 @@
+{
+  "agent_name": "study-coach-hani",
+  "sessions": [
+    {
+      "session_id": "s1",
+      "user_id": "hani",
+      "turns": [
+        {
+          "id": "t1",
+          "user": "היי, תשמרי שאני מעדיפה ללמוד בבוקר ותעני קצר."
+        },
+        {
+          "id": "t2",
+          "user": "תוסיפי לי משימה באלגוריתמים על גרפים לדדליין 2026-11-01 בעדיפות 1"
+        },
+        {
+          "id": "t3",
+          "user": "תביאי לי טיפים חיצוניים לקורס algorithms"
+        },
+        {
+          "id": "t4",
+          "user": "תראי לי את המשימות כרגע"
+        }
+      ]
+    },
+    {
+      "session_id": "s2",
+      "user_id": "hani",
+      "turns": [
+        {
+          "id": "t1",
+          "user": "מה את זוכרת על ההעדפות שלי?"
+        },
+        {
+          "id": "t2",
+          "user": "מעכשיו תעני באריכות, למרות שביקשתי קצר"
+        },
+        {
+          "id": "t3",
+          "user": "תוסיפי גם משימה ב-databases על indexing לדדליין 2026-11-05 בעדיפות 2"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "c1",
+      "session_id": "s1",
+      "turn_id": "t1",
+      "type": "state_pref_equals",
+      "user_id": "hani",
+      "key": "answer_style",
+      "value": "short"
+    },
+    {
+      "id": "c2",
+      "session_id": "s1",
+      "turn_id": "t3",
+      "type": "tool_used",
+      "tool": "get_course_hints_external"
+    },
+    {
+      "id": "c3",
+      "session_id": "s2",
+      "turn_id": "t1",
+      "type": "state_task_count_at_least",
+      "user_id": "hani",
+      "value": 1
+    },
+    {
+      "id": "c4",
+      "session_id": "s2",
+      "turn_id": "t2",
+      "type": "assistant_contains",
+      "needle": "סותר"
+    },
+    {
+      "id": "c5",
+      "session_id": "s1",
+      "turn_id": "t2",
+      "type": "model_calls_at_least",
+      "value": 2
+    },
+    {
+      "id": "c6",
+      "session_id": "s2",
+      "turn_id": "t3",
+      "type": "state_task_count_at_least",
+      "user_id": "hani",
+      "value": 2
+    }
+  ]
+}

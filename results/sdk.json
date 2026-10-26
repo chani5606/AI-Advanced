@@ -1,0 +1,184 @@
+{
+  "kind": "sdk",
+  "strict_mcp_config": true,
+  "allowed_tools": [
+    "add_task",
+    "list_tasks",
+    "save_preference",
+    "recall_memory",
+    "get_course_hints_external"
+  ],
+  "turns": [
+    {
+      "session_id": "s1",
+      "turn_id": "t1",
+      "user": "היי, תשמרי שאני מעדיפה ללמוד בבוקר ותעני קצר.",
+      "assistant": "נראה שאין לי אפשרות לשמור את ההעדפה שלך כרגע. את רוצה שאנסה שוב?",
+      "tools_used": [
+        "save_preference",
+        "recall_memory"
+      ],
+      "model_calls": 3,
+      "usage": {
+        "input": 683,
+        "output": 45,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.01362,
+      "latency_ms": 3431
+    },
+    {
+      "session_id": "s1",
+      "turn_id": "t2",
+      "user": "תוסיפי לי משימה באלגוריתמים על גרפים לדדליין 2026-11-01 בעדיפות 1",
+      "assistant": "נראה שאין לי אפשרות להוסיף משימות כרגע. את רוצה שאנסה שוב?",
+      "tools_used": [
+        "add_task"
+      ],
+      "model_calls": 2,
+      "usage": {
+        "input": 730,
+        "output": 30,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.0132,
+      "latency_ms": 1737
+    },
+    {
+      "session_id": "s1",
+      "turn_id": "t3",
+      "user": "תביאי לי טיפים חיצוניים לקורס algorithms",
+      "assistant": "נראה שאין לי אפשרות להביא טיפים לקורס אלגוריתמים כרגע. את רוצה שאנסה שוב?",
+      "tools_used": [
+        "get_course_hints_external"
+      ],
+      "model_calls": 2,
+      "usage": {
+        "input": 918,
+        "output": 39,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.016695,
+      "latency_ms": 1827
+    },
+    {
+      "session_id": "s1",
+      "turn_id": "t4",
+      "user": "תראי לי את המשימות כרגע",
+      "assistant": "נראה שאין לי אפשרות להציג את המשימות שלך כרגע. את רוצה שאנסה שוב?",
+      "tools_used": [
+        "list_tasks"
+      ],
+      "model_calls": 2,
+      "usage": {
+        "input": 1099,
+        "output": 32,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.018885,
+      "latency_ms": 2388
+    },
+    {
+      "session_id": "s2",
+      "turn_id": "t1",
+      "user": "מה את זוכרת על ההעדפות שלי?",
+      "assistant": "לא הצלחתי לזכור את ההעדפות שלך כרגע. האם תוכל להזכיר לי מהן ההעדפות שלך?",
+      "tools_used": [
+        "recall_memory"
+      ],
+      "model_calls": 2,
+      "usage": {
+        "input": 385,
+        "output": 39,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.0087,
+      "latency_ms": 1757
+    },
+    {
+      "session_id": "s2",
+      "turn_id": "t2",
+      "user": "מעכשיו תעני באריכות, למרות שביקשתי קצר",
+      "assistant": "זה בסדר, אבל זה מתנגש עם ההעדפה שלך שאתה ביקשת להביא תשובות קצרות. האם אתה מאשר להמשיך בדרישה החדשה הזו?",
+      "tools_used": [],
+      "model_calls": 1,
+      "usage": {
+        "input": 265,
+        "output": 37,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.00675,
+      "latency_ms": 1128
+    },
+    {
+      "session_id": "s2",
+      "turn_id": "t3",
+      "user": "תוסיפי גם משימה ב-databases על indexing לדדליין 2026-11-05 בעדיפות 2",
+      "assistant": "כדי להוסיף את המשימה, אני צריכה את הפרטים הבאים: \n1. מזהה המשתמש שלך \n2. הקורס \n3. הנושא \n4. הדדליין (כבר יש לך, 2026-11-05)\n5. העדיפות (כבר מציינת 2)\n\nאנא ספק את הפרטים החסרים.",
+      "tools_used": [
+        "add_task"
+      ],
+      "model_calls": 2,
+      "usage": {
+        "input": 730,
+        "output": 90,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "cost_usd": 0.0177,
+      "latency_ms": 2347
+    }
+  ],
+  "checks": [
+    {
+      "id": "c1",
+      "passed": false,
+      "reason": "condition failed"
+    },
+    {
+      "id": "c2",
+      "passed": true,
+      "reason": "ok"
+    },
+    {
+      "id": "c3",
+      "passed": false,
+      "reason": "condition failed"
+    },
+    {
+      "id": "c4",
+      "passed": false,
+      "reason": "condition failed"
+    },
+    {
+      "id": "c5",
+      "passed": true,
+      "reason": "ok"
+    },
+    {
+      "id": "c6",
+      "passed": false,
+      "reason": "condition failed"
+    }
+  ],
+  "totals": {
+    "input": 4810,
+    "output": 312,
+    "cache_read": 0,
+    "cache_write": 0,
+    "cost_usd": 0.09555,
+    "model_calls": 14,
+    "latency_ms": 14615
+  },
+  "harness_loc": {
+    "main.py": 380,
+    "tools.py": 40,
+    "agent.py": 14
+  }
+}

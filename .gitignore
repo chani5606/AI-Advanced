@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Secrets / local env
+.env
+.env.*
+
+# Runtime state
+API/runtime/
+SDK/runtime/
+state/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
